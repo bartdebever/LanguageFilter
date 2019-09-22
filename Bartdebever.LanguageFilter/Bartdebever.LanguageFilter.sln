@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bartdebever.LanguageFilter", "Bartdebever.LanguageFilter\Bartdebever.LanguageFilter.csproj", "{14189724-93FA-46CA-8BC2-DEEAA6B12FB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bartdebever.LanguageFilter.Test", "Bartdebever.LanguageFilter.Test\Bartdebever.LanguageFilter.Test.csproj", "{A3B044D8-0151-4225-854D-89A9C41615B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14189724-93FA-46CA-8BC2-DEEAA6B12FB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14189724-93FA-46CA-8BC2-DEEAA6B12FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14189724-93FA-46CA-8BC2-DEEAA6B12FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14189724-93FA-46CA-8BC2-DEEAA6B12FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3B044D8-0151-4225-854D-89A9C41615B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3B044D8-0151-4225-854D-89A9C41615B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3B044D8-0151-4225-854D-89A9C41615B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3B044D8-0151-4225-854D-89A9C41615B0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1379BDC2-0F41-44F7-89C6-1A7294729231}
+	EndGlobalSection
+EndGlobal
