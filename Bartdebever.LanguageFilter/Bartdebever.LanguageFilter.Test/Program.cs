@@ -14,8 +14,12 @@ namespace Bartdebever.LanguageFilter.Test
                 "gosh",
                 "yikes"
             });
+            filter.UseReplacements(new Dictionary<char, char>()
+            {
+                {'i', '1'}
+            });
 
-            var badText = "Hi there, oh gosh darnit";
+            var badText = "y1kes oh gosh darnit";
             var containsBannedWords = filter.ContainsBannedWords(badText);
             Console.WriteLine($"Banned words found: {containsBannedWords}");
 

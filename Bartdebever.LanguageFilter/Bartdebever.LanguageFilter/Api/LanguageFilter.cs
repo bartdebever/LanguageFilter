@@ -57,6 +57,12 @@ namespace Bartdebever.LanguageFilter.Api
             {
                 var bannedWord = _filterSettings.BannedWords.ElementAt(i);
                 bannedWordsStringBuilder.Append(bannedWord);
+
+                foreach (var mutationSet in _filterSettings.MutationSet.Where(keyValuePair => bannedWord.Contains(keyValuePair.Key)))
+                {
+                    bannedWordsStringBuilder.Append("|" + bannedWord.Replace(mutationSet.Key, mutationSet.Value));
+                }
+
                 if (i == _filterSettings.BannedWords.Count() - 1)
                 {
                     continue;
