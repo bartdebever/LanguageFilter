@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Bartdebever.LanguageFilter.Test
 {
@@ -6,7 +7,24 @@ namespace Bartdebever.LanguageFilter.Test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var filter = new Api.LanguageFilter();
+            filter.AddWords(new List<string>()
+            {
+                "darn",
+                "gosh",
+                "yikes"
+            });
+
+            var badText = "Hi there, oh gosh darnit";
+            var containsBannedWords = filter.ContainsBannedWords(badText);
+            Console.WriteLine($"Banned words found: {containsBannedWords}");
+
+            if (containsBannedWords)
+            {
+                Console.WriteLine(filter.CensorText(badText));
+            }
+
+            Console.ReadLine();
         }
     }
 }
