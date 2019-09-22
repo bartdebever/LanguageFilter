@@ -7,14 +7,14 @@ namespace Bartdebever.LanguageFilter.Test
     {
         static void Main(string[] args)
         {
-            var filter = new Api.LanguageFilter();
+            var filter = new Api.LanguageFilterClient();
             filter.AddWords(new List<string>()
             {
                 "darn",
                 "gosh",
                 "yikes"
             });
-            filter.UseReplacements(new Dictionary<char, char>()
+            filter.UseMutations(new Dictionary<char, char>()
             {
                 {'i', '1'}
             });
